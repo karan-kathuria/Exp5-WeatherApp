@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App | Karan</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="weather-box">
         <h1>Weather App</h1>
-        <p>Check the weather in your city</p>
-
-        <div class="search-area">
+        <p>Check the current weather of a city</p>
+        <div class="search">
             <input type="text" id="cityInput" placeholder="Enter city name">
-            <button id="searchBtn">Search</button>
+            <button onclick="getWeather()">Search</button>
         </div>
-
         <p id="message"></p>
-
         <div id="result"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

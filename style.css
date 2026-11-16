@@ -1,81 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #74b9ff, #a29bfe);
     margin: 0;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #77c9e8, #8b9de8);
+    padding: 15px;
 }
-
 .weather-box {
-    width: 350px;
+    width: 390px;
     max-width: 100%;
-    background-color: white;
-    padding: 25px;
-    border-radius: 15px;
+    background: #ffffff;
+    padding: 28px;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 5px 18px #526e9c;
     box-sizing: border-box;
 }
-
-h1 {
-    color: #2d3436;
-    margin-bottom: 10px;
-}
-
-.search-area {
-    display: flex;
-    gap: 8px;
-    margin-top: 20px;
-}
-
-#cityInput {
+h1 { color: #285b83; }
+.search { display: flex; gap: 8px; margin-top: 20px; }
+input {
     flex: 1;
     min-width: 0;
     padding: 10px;
-    border: 1px solid #b2bec3;
-    border-radius: 6px;
+    border: 1px solid #b6c9dc;
+    border-radius: 5px;
 }
-
 button {
-    padding: 10px 14px;
-    background-color: #0984e3;
+    background: #286b9e;
     color: white;
-    border: none;
-    border-radius: 6px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 14px;
     cursor: pointer;
 }
-
-button:hover {
-    background-color: #076bb5;
-}
-
-button:focus,
-#cityInput:focus {
-    outline: 2px solid #2d3436;
-    outline-offset: 2px;
-}
-
-#message {
-    color: #d63031;
-    font-size: 14px;
-}
-
-#result {
-    margin-top: 20px;
-}
-
-.temp {
-    font-size: 42px;
-    font-weight: bold;
-    color: #0984e3;
-    margin: 10px 0;
-}
-
-.weather-info {
-    color: #636e72;
-    line-height: 1.6;
+button:hover { background: #e17c4c; }
+#message { color: #b33b3b; }
+#result { margin-top: 20px; color: #34495e; }
+.temperature { font-size: 40px; color: #286b9e; font-weight: bold; }
+@media (max-width: 420px) {
+    .search { flex-direction: column; }
 }
